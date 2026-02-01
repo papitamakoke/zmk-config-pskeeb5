@@ -17,7 +17,7 @@ include:
     shield: pskeeb5_left
   - board: nice_nano
     shield: pskeeb_right
-    snippet: zmk-usb-logging
+    # snippet: zmk-usb-logging
   - board: nice_nano
     shield: settings_reset
 # include:
