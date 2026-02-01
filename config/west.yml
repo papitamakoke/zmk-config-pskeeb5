@@ -50,8 +50,7 @@ manifest:
       remote: klesh
       revision: main
     - name: zmk
-      remote: zmkfirmware
+      remote: klesh
       revision: main
-      import: app/west.yml
   self:
     west-commands: scripts/west-commands.yml
