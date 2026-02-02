@@ -7,8 +7,5 @@ manifest:
       remote: klesh
       revision: main
       import: app/west.yml
-    - name: kb_zmk_ps2_mouse_trackpoint_driver
-      remote: klesh
-      revision: main
   self:
     path: config
