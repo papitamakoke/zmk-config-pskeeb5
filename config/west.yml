@@ -43,9 +43,6 @@ manifest:
       revision: 6cb4c283e76209d59c45fbcb218800cd19e9339d
       path: modules/msgs/zmk-studio-messages
       remote: zmkfirmware
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
     - name: kb_zmk_ps2_mouse_trackpoint_driver
       remote: klesh
       revision: main
