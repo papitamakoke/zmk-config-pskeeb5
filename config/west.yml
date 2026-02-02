@@ -50,4 +50,4 @@ manifest:
       remote: klesh
       revision: main
   self:
-    west-commands: scripts/west-commands.yml
+    path: config
