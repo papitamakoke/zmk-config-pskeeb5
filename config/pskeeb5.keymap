@@ -80,6 +80,19 @@
         };
     };
 
+    macros {
+        win_sleep: win_sleep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LG(X)>   // Opens the quick menu
+                , <&msel 50>    // Small delay for menu
+                , <&kp U>       // "Shut down or sign out"
+                , <&msel 50>    // Delay
+                , <&kp S>;      // "Sleep"
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -113,7 +126,7 @@
         //│ F1       │  F2      │  F3       │  F4     │ PAGE DN  │   │ *              │ 1        │ 2        │ 3        │ /           │
            &kp F1     &kp F2     &kp F3     &kp F4     &kp PG_DN       &kp KP_MULTIPLY  &kp N1     &kp N2     &kp N3     &kp KP_DIVIDE 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                        &trans     &trans    &trans     &trans           &trans &kp N0     &kp DOT       &trans
+                       &win_sleep  &trans    &trans     &trans         &trans     &kp N0     &kp DOT       &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
