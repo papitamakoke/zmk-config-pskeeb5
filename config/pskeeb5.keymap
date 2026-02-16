@@ -86,9 +86,9 @@
             #binding-cells = <0>;
             bindings
                 = <&kp LG(X)>   // Opens the quick menu
-                , <&msel 50>    // Small delay for menu
+                , <&macro_wait_time 50>    // Small delay for menu
                 , <&kp U>       // "Shut down or sign out"
-                , <&msel 50>    // Delay
+                , <&macro_wait_time 50>    // Delay
                 , <&kp S>;      // "Sleep"
         };
     };
