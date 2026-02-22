@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp INT5 &kp LS(R) &kp ! &kp K &kp K &kp A &kp N &kp A &kp K &kp N0>;
+                = <&kp INT5 &kp LS(R) &kp EXCL &kp K &kp K &kp A &kp N &kp A &kp K &kp N0>;
         };
         M2: M2 {
             compatible = "zmk,behavior-macro";
