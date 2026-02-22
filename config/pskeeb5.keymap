@@ -95,7 +95,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp JP_QUOTE>, <&kp JP_BACKQUOTE>;
+            bindings = <&kp JP_SQT>, <&kp JP_GRAVE>;
         };
     };
 
