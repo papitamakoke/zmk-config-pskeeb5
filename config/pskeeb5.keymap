@@ -152,7 +152,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp INT5 &kp 6 &kp 1 &kp 0 &kp 8 &kp 1 &kp 1>;
+                = <&kp INT5 &kp N6 &kp N1 &kp N0 &kp N8 &kp N1 &kp N1>;
         };
         M1: M1 {
             compatible = "zmk,behavior-macro";
@@ -164,8 +164,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp INT5 &kp W &kp A &kp T &kp A &kp N &kp A &kp B &kp E &kp DOT &kp N5 &kp N3 &kp C &kp DOT &kp Y &kp U &kp LBKT>
-                , <&kp J &kp P &kp DOT &kp N &kp I &kp P &kp P &kp O &kp N &kp S &kp T &kp E &kp E &kp L &kp DOT &kp C &kp O &kp M>;
+                = <&kp INT5 &kp W &kp A &kp T &kp A &kp N &kp A &kp B &kp E &kp DOT>
+                , <&kp N5 &kp N3 &kp C &kp DOT &kp Y &kp U &kp LBKT>
+                , <&kp J &kp P &kp DOT>
+                , <&kp N &kp I &kp P &kp P &kp O &kp N &kp S &kp T &kp E &kp E &kp L &kp DOT>
+                , <&kp C &kp O &kp M>;
         };
     };
 
@@ -183,11 +186,11 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ? \    │
            &ht LSHFT Z &ht LCTRL X &ht LGUI C &ht LALT V &kp B         &kp N      &kp M      &kp COMMA &kp DOT     &td0
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-             &kp LG(LA(K))  &ht LCTRL JP_HANZEN &lt 3 SPACE &lt 2 DEL     &lt 3 BSPC &lt 2 ENTER &ht RCTRL TAB &tog 3
+             &kp LG(LA(K))  &ht LCTRL JP_HANZEN &lt 3 SPACE &lt 2 DEL     &lt 2 BSPC &lt 3 ENTER &ht RCTRL TAB &tog 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
             // sensor-bindings = <&rot_msc ROT_MSC_SUP ROT_MSC_SDN &rot_msc ROT_MSC_SLT ROT_MSC_SRT>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_msc ROT_MSC_SDN ROT_MSC_SUP>;
         };
 
         ohnishi_layer {
@@ -206,7 +209,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
             // sensor-bindings = <&rot_msc ROT_MSC_SUP ROT_MSC_SDN &rot_msc ROT_MSC_SLT ROT_MSC_SRT>;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &rot_msc ROT_MSC_SDN ROT_MSC_SUP>;
         };
 
         num_layer {
@@ -239,7 +242,7 @@
         //│ LSHIFT   │ INS      │          │  <       │  [       │   │  ]       │  >       │ F8       │ PrtScr   │ Pause    │
             &kp LSHFT  &kp INS    &trans     &kp LT     &kp JP_LBKT   &kp JP_RBKT &kp GT     &kp F8     &kp PSCRN  &kp PAUSE_BREAK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                        &trans     &trans    &trans     &trans         &trans     &trans     &trans     &trans
+                        &trans     &trans    &trans     &trans         &trans     &trans     &kp RCTRL  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
