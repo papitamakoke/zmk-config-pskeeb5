@@ -201,22 +201,14 @@
             bindings
                 = <&kp INT5 &kp LS(R) &kp EXCL &kp K &kp K &kp A &kp N &kp A &kp K &kp N0>;
         };
-        M2_1: M2_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&kp INT5 &kp W &kp A &kp T &kp A &kp N &kp A &kp B &kp E &kp DOT>
-                , <&kp N5 &kp N3 &kp C &kp DOT &kp Y &kp U &kp LBKT>;
-        };
         M2: M2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
             bindings
-                = <&M2_1>
+                = <&kp INT5 &kp W &kp A &kp T &kp A &kp N &kp A &kp B &kp E &kp DOT>
+                , <&kp N5 &kp N3 &kp C &kp DOT &kp Y &kp U &kp JP_AT>
                 , <&kp J &kp P &kp DOT>
                 , <&kp N &kp I &kp P &kp P &kp O &kp N &kp S &kp T &kp E &kp E &kp L &kp DOT>
                 , <&kp C &kp O &kp M>;
