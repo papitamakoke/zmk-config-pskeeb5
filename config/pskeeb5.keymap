@@ -100,32 +100,37 @@
         ctrl1: ctrl_1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp LC(N1)>;
-            mods = <(MOD_LCTL)>;
+            bindings = <&kp Q>, <&kp N1>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         ctrl2: ctrl_2 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp W>, <&kp LC(N2)>;
-            mods = <(MOD_LCTL)>;
+            bindings = <&kp W>, <&kp N2>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         ctrl5: ctrl_5 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp R>, <&kp LC(N5)>;
-            mods = <(MOD_LCTL)>;
+            bindings = <&kp R>, <&kp N5>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         ctrlY: ctrl_Y {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&kp LC(Y)>;
-            mods = <(MOD_LCTL)>;
+            bindings = <&kp T>, <&kp Y>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         ctrlU: ctrl_U {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp G>, <&kp LC(U)>;
-            mods = <(MOD_LCTL)>;
+            bindings = <&kp G>, <&kp U>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         //gresc: grave_escape {
         //    compatible = "zmk,behavior-mod-morph";
