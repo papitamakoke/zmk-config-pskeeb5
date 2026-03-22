@@ -97,6 +97,42 @@
             tapping-term-ms = <200>;
             bindings = <&kp JP_SQT>, <&kp JP_GRAVE>;
         };
+        ctrl1: ctrl_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp LC(N1)>;
+            mods = <(MOD_LCTL)>;
+        };
+        ctrl2: ctrl_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp LC(N2)>;
+            mods = <(MOD_LCTL)>;
+        };
+        ctrl5: ctrl_5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp LC(N5)>;
+            mods = <(MOD_LCTL)>;
+        };
+        ctrlY: ctrl_Y {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp LC(Y)>;
+            mods = <(MOD_LCTL)>;
+        };
+        ctrlU: ctrl_U {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp LC(U)>;
+            mods = <(MOD_LCTL)>;
+        };
+        //gresc: grave_escape {
+        //    compatible = "zmk,behavior-mod-morph";
+        //    #binding-cells = <0>;
+        //    bindings = <&kp ESC>, <&kp GRAVE>;
+        //    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+        //};
     };
 
 
@@ -160,12 +196,22 @@
             bindings
                 = <&kp INT5 &kp LS(R) &kp EXCL &kp K &kp K &kp A &kp N &kp A &kp K &kp N0>;
         };
+        M2_1: M2_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&kp INT5 &kp W &kp A &kp T &kp A &kp N &kp A &kp B &kp E &kp DOT>
+                , <&kp N5 &kp N3 &kp C &kp DOT &kp Y &kp U &kp LBKT>;
+        };
         M2: M2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings
-                = <&kp INT5 &kp W &kp A &kp T &kp A &kp N &kp A &kp B &kp E &kp DOT>
-                , <&kp N5 &kp N3 &kp C &kp DOT &kp Y &kp U &kp LBKT>
+                = <&M2_1>
                 , <&kp J &kp P &kp DOT>
                 , <&kp N &kp I &kp P &kp P &kp O &kp N &kp S &kp T &kp E &kp E &kp L &kp DOT>
                 , <&kp C &kp O &kp M>;
@@ -186,7 +232,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ? \    │
            &ht LSHFT Z &ht LCTRL X &ht LGUI C &ht LALT V &kp B         &kp N      &kp M      &kp COMMA &kp DOT     &td0
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-             &kp LG(LA(K))  &ht LCTRL JP_HANZEN &lt 3 SPACE &lt 2 DEL     &lt 2 BSPC &lt 3 ENTER &ht RCTRL TAB &tog 1
+             &kp LG(LA(K))  &ht LCTRL JP_HANZEN &lt 3 SPACE &lt 2 DEL     &lt 2 BSPC &lt 3 KP_ENTER &ht RCTRL TAB &tog 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
             // sensor-bindings = <&rot_msc ROT_MSC_SUP ROT_MSC_SDN &rot_msc ROT_MSC_SLT ROT_MSC_SRT>;
