@@ -229,7 +229,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ? \    │
            &ht LSHFT Z &ht LCTRL X &ht LGUI C &ht LALT V &kp B         &kp N      &kp M      &kp COMMA &kp DOT     &td0
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-             &kp LG(LA(K))  &ht LCTRL JP_HANZEN &lt 3 SPACE &lt 2 DEL     &lt 2 BSPC &lt 3 KP_ENTER &ht RCTRL TAB &tog 1
+             &kp LG(LA(K))  &ht LCTRL JP_HANZEN &lt 3 SPACE &lt 2 DEL     &lt 2 BSPC &lt 3 ENTER &ht RCTRL TAB &tog 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
             // sensor-bindings = <&rot_msc ROT_MSC_SUP ROT_MSC_SDN &rot_msc ROT_MSC_SLT ROT_MSC_SRT>;
